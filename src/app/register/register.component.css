@@ -1,0 +1,15 @@
+.card{
+    margin-top: 50px;
+    margin-bottom: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.card img{
+    margin-top: -60px;
+    border-radius: 100%;
+    box-shadow: 5px 10px 25px 0 rgba(0,0,0,0.3);
+}
+.btn{
+    margin-top: 5px;
+    margin-right: 10px;
+}

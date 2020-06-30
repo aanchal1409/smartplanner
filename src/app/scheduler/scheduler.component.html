@@ -1,0 +1,15 @@
+<div class="bg-event">
+  <div class="container">
+    <div class="row justify-content-center">          
+        <jqxScheduler *ngIf="adapter" #myScheduler 
+            (onAppointmentDelete)="deleteAppointment($event)"  
+            (onAppointmentAdd)="addAppointment($event)"
+            (onAppointmentChange)="changeAppointment($event)"
+            [width]="getWidth()" [height]="600" [source]="adapter" [date]="date"
+            [rowsHeight]="40" [appointmentDataFields]="appointmentDataFields" 
+            [view]="'weekView'" [views]="views"
+            (onCellClick)="meme($event)" [resources]="resources">
+        </jqxScheduler>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,8 @@
+<p>tryfirebase works!</p>
+<div class="container">
+<ul>
+    <li *ngFor="let item of items | async">
+    <h3>{{ item | json }}</h3>
+    </li>
+</ul>
+</div>

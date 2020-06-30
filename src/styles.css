@@ -1,1 +1,31 @@
 /* You can add global styles to this file, and also import other style files */
+/* @import 'jqwidgets-ng/jqwidgets/styles/jqx.base.css'; */
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+.bg-login{
+    background-image: url('https://wallpaperheart.com/wp-content/uploads/2018/03/background-images-hd-1080p-colors.jpg');
+    background-size: cover;
+    height:100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+.bg-register{
+    background-image: url('https://www.pixelstalk.net/wp-content/uploads/2016/05/Dark-in-the-Black-Wallpapers-HD.jpg');
+    background-size: cover;
+    height:100;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+.bg-dashboard{
+    background-color:blanchedalmond;
+}
+.bg-homeplanner{
+    background-image: url("https://cdn.mos.cms.futurecdn.net/qyvQN6ehECFd3B4ki8TeXk-1200-80.jpg"); 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100%;
+}

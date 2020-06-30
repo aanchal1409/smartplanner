@@ -1,0 +1,20 @@
+
+<nav class="navbar navbar-expand navbar-light" style="background-color:rgba(0, 0, 0, 0.500);">
+    <!-- <div class="nav navbar-nav">
+        <a class="nav-item nav-link active text-white" [routerLink]="['home']" routerLinkActive="router-link-active" >Home <span class="sr-only">(current)</span></a>
+        <a class="nav-item nav-link text-white " [routerLink]="['dashboard']" routerLinkActive="router-link-active" >Dashboard</a>
+        <a class="nav-item nav-link text-white" [routerLink]="['scheduler']" routerLinkActive="router-link-active" >Schedule</a>
+        <a class="nav-item nav-link text-white" [routerLink]="['signup']" routerLinkActive="router-link-active" >Signup</a>
+        <a class="nav-item nav-link text-white" [routerLink]="['login']" routerLinkActive="router-link-active" *ngIf="!userservice.loggedin" >Login</a>
+        <a class="nav-item nav-link text-white" (click)="logout()" *ngIf="userservice.loggedin">Logout</a>
+    </div> -->
+    <div class="nav navbar-nav " >
+        <a class="nav-item nav-link active text-white" [routerLink]="['home']" routerLinkActive="router-link-active" >Home <span class="sr-only">(current)</span></a>
+        <a class="nav-item nav-link text-white " [routerLink]="['dashboard']" routerLinkActive="router-link-active" >Dashboard</a>
+        <a class="nav-item nav-link text-white" [routerLink]="['scheduler']" routerLinkActive="router-link-active" >Schedule</a>
+        <a class="nav-item nav-link text-white" [routerLink]="['signup']" routerLinkActive="router-link-active" *ngIf="!userservice.loggedin">Signup</a>
+        <a class="nav-item nav-link text-white" [routerLink]="['login']" routerLinkActive="router-link-active" *ngIf="!userservice.loggedin" >Login</a>
+        <a class="nav-item nav-link text-white" (click)="logout()" *ngIf="userservice.loggedin">Logout</a>
+          
+    </div>
+</nav>

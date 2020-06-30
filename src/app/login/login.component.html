@@ -1,0 +1,55 @@
+<div class="bg-login">
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-7">
+            <div class="card mt-5 shadow-lg" >
+            <div class="card-body bg-light">
+                <div class="row">
+                <!-- <img src="https://media.gettyimages.com/vectors/user-login-or-access-authentication-icon-vector-id499235734?b=1&k=6&m=499235734&s=170x170&h=dQ69QePdLWGj93O5d3NrnBdrgljHDzhIAfZOmobUaA0=" alt="login" class="img-fluid"> -->
+                
+                <div class="col-md-5 text-center">
+                    <br>
+                    <br>
+                    <br>
+                    <img src="https://tse3.mm.bing.net/th?id=OIP.pcFyxboVp10ubz9tA3IYMQAAAA&pid=Api&P=0&w=211&h=159" alt="login" class="img-fluid">
+                </div>
+                <div class="col-md-7">
+                <p class="display-4 text-center"><b>Login form</b></p>
+                <form [formGroup]="loginform"  (submit)="formSubmit(loginform.value)">
+
+                   <mat-form-field appearance="outline" class="col-md-12">
+                        <mat-label>UserName</mat-label>
+                        <input matInput placeholder="UserName" formControlName="username">
+                        <mat-icon matPrefix>verified_user</mat-icon>
+                        <mat-error>UserName required</mat-error>
+                    </mat-form-field>
+            
+                    <mat-form-field appearance="outline" class="col-md-12">
+                        <mat-label>Password</mat-label>
+                        <input matInput type="password" placeholder="Password" formControlName="password">
+                        <mat-icon matPrefix>visibility_off</mat-icon>
+                        <mat-error>Password required</mat-error>
+                    </mat-form-field>
+                    
+                    <div class="row justify-content-center">
+                       <button class="btn md-3" mat-raised-button color="warn">Signin</button>
+                    </div>
+                    <div class="row justify-content-center">
+                       <p>Forgot Password??<a href="">Help!!</a></p>
+                    </div>
+                </form>
+                </div>
+                </div>
+            </div>
+            </div>  
+        </div>
+    </div>
+</div>
+</div>
+
+
+
+<!-- npm install -g firebase-tools
+firebase login
+firebase init
+firebase deploy -->
